@@ -10,7 +10,7 @@ class Router
         try
         {
             //detecte le nom de l'instance de class et le load le .php
-            spl_autoload_restister(function($class){
+            spl_autoload_register(function($class){
                 //si detecte .php par rapport au param $class il va inclure
                 //directement le fichier php
                 require_once('models/'.$class.'.php');

@@ -4,7 +4,7 @@ class AnnonceManager extends Model
 {
  public function getAnnonces()
  {
-     $this->getBdd();
+    //  $this->getBdd();
      //table annonce et l'objet de getAll de model
      //objet = Annonces.php
 

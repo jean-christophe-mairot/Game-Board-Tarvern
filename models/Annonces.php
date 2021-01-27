@@ -38,7 +38,7 @@ class Annonces
     /**
      * Get the value of _id_annonce
      */ 
-    public function get_id_annonce()
+    public function getId()
     {
         return $this->_id_annonce;
     }
@@ -48,7 +48,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_id_annonce($id_annonce)
+    public function setId($id_annonce)
     {
         $id_annonce = (int) $id_annonce;
         if($id_annonce>0)
@@ -60,7 +60,7 @@ class Annonces
     /**
      * Get the value of _titre
      */ 
-    public function get_titre()
+    public function getTitre()
     {
         return $this->_titre;
     }
@@ -70,7 +70,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_titre($titre)
+    public function setTitre($titre)
     {
         if(is_string($titre)){
            $this->_titre = $titre; 
@@ -81,7 +81,7 @@ class Annonces
     /**
      * Get the value of _description
      */ 
-    public function get_description()
+    public function getDescription()
     {
         return $this->_description;
     }
@@ -91,7 +91,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_description($description)
+    public function setDescription($description)
     {
         if(is_string($description)){
             $this->_description = $description; 
@@ -101,7 +101,7 @@ class Annonces
     /**
      * Get the value of _photo
      */ 
-    public function get_photo()
+    public function getPhoto()
     {
         return $this->_photo;
     }
@@ -111,7 +111,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_photo($_photo)
+    public function setPhoto($_photo)
     {
         $this->_photo = $_photo;
 
@@ -121,7 +121,7 @@ class Annonces
     /**
      * Get the value of _prix
      */ 
-    public function get_prix()
+    public function getPrix()
     {
         return $this->_prix;
     }
@@ -131,7 +131,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_prix($prix)
+    public function setPrix($prix)
     {
         if(is_float($prix)){
             $this->_prix = $prix; 
@@ -141,7 +141,7 @@ class Annonces
     /**
      * Get the value of _annonce_date
      */ 
-    public function get_annonce_date()
+    public function getAnnonceDate()
     {
         return $this->_annonce_date;
     }
@@ -151,7 +151,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_annonce_date($annonce_date)
+    public function setAnnonceDate($annonce_date)
     {
         $this->_annonce_date = $annonce_date;
 
@@ -161,7 +161,7 @@ class Annonces
     /**
      * Get the value of _user_mail
      */ 
-    public function get_user_mail()
+    public function getUserMail()
     {
         return $this->_user_mail;
     }
@@ -171,7 +171,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_user_mail($_user_mail)
+    public function setUserMail($_user_mail)
     {
         $this->_user_mail = $_user_mail;
 
@@ -181,7 +181,7 @@ class Annonces
     /**
      * Get the value of _annonce_pdf
      */ 
-    public function get_annonce_pdf()
+    public function getAnnoncePdf()
     {
         return $this->_annonce_pdf;
     }
@@ -191,7 +191,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_annonce_pdf($_annonce_pdf)
+    public function setAnnoncePdf($_annonce_pdf)
     {
         $this->_annonce_pdf = $_annonce_pdf;
 
@@ -201,7 +201,7 @@ class Annonces
     /**
      * Get the value of _j2
      */ 
-    public function get_j2()
+    public function getJ2()
     {
         return $this->_j2;
     }
@@ -211,7 +211,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_j2($_j2)
+    public function setJ2($_j2)
     {
         $this->_j2 = $_j2;
 
@@ -221,7 +221,7 @@ class Annonces
     /**
      * Get the value of _j15
      */ 
-    public function get_j15()
+    public function getJ15()
     {
         return $this->_j15;
     }
@@ -231,7 +231,7 @@ class Annonces
      *
      * @return  self
      */ 
-    public function set_j15($_j15)
+    public function setJ15($_j15)
     {
         $this->_j15 = $_j15;
 
