@@ -15,6 +15,8 @@ class Router
                 //directement le fichier php
                 require_once('models/'.$class.'.php');
             });
+
+            $url= '';
             //si il y un param get url
             if(isset($_GET['url']))
             {
