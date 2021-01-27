@@ -1,0 +1,95 @@
+- créer un site de petites-annonces
+
+- Concrètement le site doit afficher les annonces créées et permettre
+d’ajouter une annonce avec une simple adresse courriel.
+
+- création d’une nouvelle annonce par un utilisateur anonyme
+	-> reçois un courriel valide l'annonce
+		- contient un lien de confirmation
+		- contient un lien de modification
+	-> user reçoit un mail de confirmation
+		- possibilité de la supprimer
+
+mettre en place des messages de confirmation
+
+securité (quand tout le crud est valide):
+	-> pas modifiable sans le lien 
+	-> chaque annonce a un id unique (pour afficher dans un form de modif)
+
+page d'accueil : 10 premières annonces sous forme de card
+puis un onglet pour les 10 prochaine
+
+click sur une card on à le detail de l'offre avec possibilité de download un pdf 
+du détail
+
+si pas d'image dans l'annonce ajouter une image 
+
+ne pas ajouter d'image n'est pas obligatoire
+
+------------------------------------------------------------------------------------------------
+Les +
+
+1. Tâche cron qui supprime les annonces qui sont en attente de publication à n+2 jours de la
+date de création. Envoyer un courriel à la personne de la suppression de son annonce en
+attente.
+2. Tâche cron qui supprime les annonces qui sont publiées à n+15 jours de la date de
+création. Envoyer un mail à la personne de la suppression de son annonce
+3. Créer un infinite-scroll pour la pagination des annonces
+
+------------------------------------------------------------------------------------------------
+navbar:
+- 
+
+page d'accueil
+affiche les annonces 10 / 10 
+
+fonctionnement de la card 
+affiche la card simplifié 
+puis quand on appuie sur détail on fait apparaitre une div qui contient l'ensemble de l'annonce. 
+
+aside flêche haut et bas pour circuler dans la page
+
+un bouton les dernière annonces 
+un bouton précédente 
+un bouton suivante
+un bouton entrée une nouvelle annonce
+
+-----------------------------------------------------------------------------------------------
+gestion de session dans la card :
+
+gestion de la suppression de l'annonce par le user en entrant un password de 
+suppression au moment de la creation de l'annonce bouton -
+
+-----------------------------------------------------------------------------------------------
+base de donnée
+ 
+information : les annonces
+
+1 seul table
+
+- nom du produit
+- categorie
+- description
+- prix 
+- adresse mail
+- password de suppression
+
+- 1 image
+- un bouton suppression
+- un bouton affiche le detail (div qui ce depli)
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+https://codepen.io/candroo/pen/wKEwRL
+portfolio
+https://codepen.io/mimikos/pen/wKqyqY
+
+ 
+
+
+
