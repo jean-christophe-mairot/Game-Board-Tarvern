@@ -27,7 +27,7 @@ VALIDATION
 Les étapes :
 
 - [x] Définir l'arborescence de vos dossiers
-- [x] Définir les routes nécessaire à votre projet
+- [ ] Définir les routes nécessaire à votre projet
 - [x] Mettre en place le .gitignore
 
 - [x] Réaliser les wireframe de toutes vos pages et emails
