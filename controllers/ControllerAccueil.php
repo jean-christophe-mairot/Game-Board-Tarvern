@@ -9,7 +9,7 @@ class ControllerAccueil
 
     public function __construct($url)
     {
-        
+        $url=[];
         // if(isset($url) && count($url)>1)
         if(isset($url) && count($url)>1)
         {
