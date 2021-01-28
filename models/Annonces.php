@@ -45,7 +45,7 @@ class Annonces
 
     /**
      * Set the value of _id_annonce
-     *
+     * mise à jour de id
      * @return  self
      */ 
     public function setId($id_annonce)
@@ -72,6 +72,7 @@ class Annonces
      */ 
     public function setTitre($titre)
     {
+        //si c'est une string on set
         if(is_string($titre)){
            $this->_titre = $titre; 
         }

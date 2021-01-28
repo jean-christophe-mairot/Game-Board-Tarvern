@@ -1,3 +1,2 @@
-<?php
+<?= $errorMsg ?>
 
-echo"404";

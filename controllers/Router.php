@@ -25,12 +25,13 @@ class Router
                 $url = explode('/', filter_var($_GET['url'], FILTER_SANITIZE_URL));
                 // la première lettre en majuscule et le reste en minuscule en partant 
                 //de 0 premier paramètre
-                $controller = ucfirst(strtolower($url[0]));
+                
+                $controller = ucfirst(strtolower($url[0]));//A ccueil
                 //le nom du Controller commencant par Controller 
                 //suivi du nom avec la première lettre en majuscule
-                $controllerClass = "Controller".$controller;
+                $controllerClass = "Controller".$controller;//ControllerAccueil
                 //dans le dossier controllers 
-                $controllerFile = "Controllers/".$controllerClass.".php";
+                $controllerFile = "controllers/".$controllerClass.".php";//ControllerAccueil.php
                 //si le controller existe dans le dossier controllers
                 if(file_exists($controllerFile))
                 {
