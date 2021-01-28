@@ -1,5 +1,5 @@
 <?php
-
+require_once('views/View.php');
 class ControllerAccueil
 {
     private $_annonceManager;
@@ -23,6 +23,8 @@ class ControllerAccueil
         $this->_annonceManager = new AnnonceManager;
         $annonces = $this->_annonceManager->getAnnonces();
 
-        require_once('views/accueil.view.php');
+        // require_once('views/accueil.view.php');
+        $this->_view= new View('Accueil');
+        $this->_view->generate(array('articles'=>$annonces));
     }
 }

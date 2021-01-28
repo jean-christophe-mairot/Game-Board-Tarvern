@@ -162,6 +162,9 @@ AUTOLOADER
   dans le termial :  
   php -S localhost:1800 -t public(nom de dossier qui sert de racine)
 
+VENDOR
+composer require '/vendor/autoload.php'
+
 MJML
 
 - mjml : pour la gestion du mail
