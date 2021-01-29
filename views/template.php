@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="public/css/header.css">
         <link rel="stylesheet" href="public/css/nav.css">
         <link rel="stylesheet" href="public/css/404.css">
+        <link rel="stylesheet" href="public/css/footer.css">
 
         <!-- titre qui change en fonction de la vue -->
         <title><?= $t ?></title>
@@ -17,12 +18,18 @@
             <h1>Game Board Taverne</h1>
             <p>Vous prendrez bien un petit jeu ?!</p>
         </header>
-        
+        <nav class="navAside">
+            <ul>
+                <li><a href=""></a><img src="public/img/retour_accueil.png" alt=""></li>
+                <li><a href=""></a><img src="public/img/bouton.png" alt=""></li>
+                <li><a href=""></a><img src="public/img/10_suivante.png" alt=""></li>
+            </ul>
+        </nav>
         <!-- content qui arrive de View -->
             <?= $content ?>
         
             <!-- footer -->
-        <footer>
+        <footer class="footer">
             <p>Créé par Mr Gitmoi</p>
         </footer>
 
