@@ -35,12 +35,15 @@
   src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf) format('truetype');
 }
 body {
+  margin: 0;
   background: #dce1df;
   color: #4f585e;
   font-family: "Source Sans Pro", sans-serif;
   text-rendering: optimizeLegibility;
 }
 .container {
+  padding-top: 100px;
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -142,7 +145,7 @@ div.card div.card-title h2 small {
   letter-spacing: -0.025em;
 }
 div.card div.card-description {
-  padding: 0 15px 10px;
+  padding: 10px 15px 10px;
   position: relative;
   font-size: 14px;
 }

@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" href="public/css/card.css">
         <link rel="stylesheet" href="public/css/header.css">
         <link rel="stylesheet" href="public/css/nav.css">
@@ -13,7 +14,7 @@
     </head>
     <body>
         <header class="header">
-            <h1s>Game Board Taverne</h1>
+            <h1>Game Board Taverne</h1>
             <p>Vous prendrez bien un petit jeu ?!</p>
         </header>
         
