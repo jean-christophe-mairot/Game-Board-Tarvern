@@ -4,10 +4,10 @@ class view
 {
     private $_file;
     private $_t;
-
+    // quand on entre le nom d'un fichier on obteint views/.$action.view.php
     public function __construct($action)
     {
-        $this->_file = 'views/view'.$action.'.php';
+        $this->_file = 'views/'.$action.'.view.php';
     }
 
     //methode qui génère la vue
@@ -32,10 +32,6 @@ class view
     /**
      * Method generateFile = génère un fichier vue et renvoie le resultat produit
      *
-     * @param $file $file [explicite description]
-     * @param $data $data [explicite description]
-     *
-     * @return void
      */
     private function generateFile($file, $data)
     {
@@ -46,11 +42,13 @@ class view
             extract($data);
             //temporisation declenche la mise en tampon
             ob_start();
+            //on inclu le fichier vue
             require $file;
             //arrête la temporisation et renvoie le tampon de sortie
             return ob_get_clean();
 
         }else{
+            // sinon génère une exception
             throw new Exception('Fichier '.$file.' introuvable');
         }
     }

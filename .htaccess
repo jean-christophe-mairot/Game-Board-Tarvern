@@ -10,5 +10,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # on active les règles de réécriture
-#ce que l'on tape dans l'url sera égale à index.php?url= le texte tapé dans l'url
+# ce que l'on tape dans l'url sera égale à index.php?url= le texte tapé dans l'url
 RewriteRule ^(.*)$ index.php?url=$1
+

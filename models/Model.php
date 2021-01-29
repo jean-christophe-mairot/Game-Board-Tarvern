@@ -7,7 +7,7 @@ abstract class Model
  //instancie la connexion à la bdd
  private static function setBdd()
  {
-     self::$_bdd = new PDO('mysql:host=localhost;dbname=gb_taverne;charset=utf8','root','');
+     self::$_bdd = new PDO('mysql:host=localhost;dbname=bg_taverne;charset=utf8','root','');
      self::$_bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
  }
 

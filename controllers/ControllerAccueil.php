@@ -25,6 +25,6 @@ class ControllerAccueil
 
         // require_once('views/accueil.view.php');
         $this->_view= new View('Accueil');
-        $this->_view->generate(array('articles'=>$annonces));
+        $this->_view->generate(array('annonces'=>$annonces));
     }
 }
