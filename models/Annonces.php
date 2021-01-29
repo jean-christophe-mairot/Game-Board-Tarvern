@@ -132,10 +132,10 @@ class Annonces
      *
      * @return  self
      */ 
-    public function setPrix($prix)
+    public function setPrix(float $_prix)
     {
-        if(is_float($prix)){
-            $this->_prix = $prix; 
+        if(is_float($_prix)){
+            $this->_prix = $_prix; 
          }
     }
 

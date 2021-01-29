@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/card.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="test">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id perferendis
+      eveniet itaque enim voluptatem. Cum cumque sapiente quas provident error,
+      veritatis porro mollitia dolorem omnis maiores labore, iste quae atque qui
+      laudantium adipisci tempore, in harum! Reiciendis error quae velit
+      laboriosam? Illo deserunt quia beatae, totam necessitatibus molestiae
+      perspiciatis placeat reiciendis magnam neque sit a eius eum ea, error
+      consequuntur tenetur quibusdam debitis quos ex, porro nemo. Odio impedit,
+      deserunt nihil sequi explicabo amet veniam. Mollitia qui ea amet velit
+      doloribus enim placeat. Autem vel saepe explicabo voluptatem nobis est,
+      eveniet quasi possimus veniam illo similique vitae quod. Architecto
+      excepturi officia delectus voluptatem aperiam repellendus rem optio
+      possimus distinctio dolorum, reprehenderit iusto minus, deserunt error
+      consequatur deleniti. Reiciendis possimus perferendis, nostrum saepe nam
+      qui quis quod quos voluptatem earum ad nesciunt cumque sit maiores
+      corporis maxime amet et, praesentium, ipsam blanditiis? Voluptatum
+      repellendus eos earum deleniti alias cupiditate magni blanditiis, neque
+      fuga fugit, nulla incidunt voluptates laborum pariatur quasi explicabo
+      necessitatibus mollitia enim exercitationem. Numquam in et vero adipisci,
+      excepturi asperiores nemo quibusdam nostrum labore doloribus minima amet
+      beatae cupiditate est tempora. Corporis nobis quia quaerat facilis
+      voluptates, accusamus eligendi quibusdam. Excepturi eveniet pariatur sint
+      facere earum! Ipsa perspiciatis fuga placeat rem atque esse nihil minus
+      iure aut nulla ducimus est sint, excepturi corporis hic deleniti eveniet
+      accusamus vero ipsam molestiae. Exercitationem, cum. Quo magni possimus
+      nesciunt minus vero cupiditate ab dolore? Omnis animi rem harum, fuga
+      velit, assumenda fugit sed eveniet architecto praesentium deserunt et
+      doloribus numquam id laudantium deleniti excepturi, voluptas pariatur!
+      Saepe explicabo repellendus totam? Magni neque tempora consectetur?
+      Facilis inventore laudantium nemo amet est, corrupti exercitationem ipsa,
+      deserunt tempore cum odit, quo doloribus ratione. Atque praesentium quod
+      voluptas repudiandae cupiditate harum omnis sit nesciunt corporis aliquam
+      vero ex quibusdam, facilis repellendus! Esse sit minus alias ex, mollitia
+      porro nobis illo voluptas magni est provident repellat, facilis impedit
+      molestias ipsam atque pariatur repellendus cumque! Repudiandae neque ea
+      quasi consequatur ullam sapiente dicta impedit sed eos, qui voluptate
+      nihil beatae quidem, a molestiae dolorum praesentium accusantium
+      perspiciatis aliquam incidunt veritatis dolore ex temporibus deleniti.
+      Accusantium fugiat ab esse aperiam nam reprehenderit labore accusamus eum
+      perferendis itaque est sit, eius sequi natus quas error neque beatae porro
+      eaque earum, recusandae veniam quos. Ad illo veniam nisi quas ex, fuga
+      cumque! Optio ab repudiandae perferendis dicta repellendus temporibus at!
+      Itaque eligendi minima deleniti, cum hic veniam. Nemo cupiditate voluptate
+      consequuntur non explicabo ducimus modi dolores vero fugit. Quia earum
+      laudantium inventore neque aliquam unde, voluptate ipsa molestias eveniet
+      veniam praesentium quo quas maxime magni laborum, reiciendis atque eius
+      magnam obcaecati officia autem adipisci, dolores veritatis. Hic
+      voluptatibus, enim distinctio cum assumenda consectetur aliquam, omnis
+      sapiente cumque vitae, eius atque sit explicabo dolorem in inventore fugit
+      nobis expedita impedit asperiores labore ipsa at saepe? Quos temporibus
+      architecto libero ad tempora, voluptatibus cumque rerum tenetur
+      perspiciatis alias pariatur non in quaerat, minus beatae atque veritatis
+      vitae labore dignissimos adipisci! Odio eligendi dicta neque velit numquam
+      voluptatem voluptatum ducimus ipsam esse? Deserunt, possimus.
+    </p>
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <div class="card__image-holder">
+            <img
+              class="card__image"
+              src="https://source.unsplash.com/300x225/?wave"
+              alt="wave"
+            />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              <?=$annonce->getTitre()?>
+              <small>Image from unsplash.com</small>
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description"><?=$annonce->getDescription()?></div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" class="btn">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
