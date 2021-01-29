@@ -1,97 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="public/css/card.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <p class="test">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id perferendis
-      eveniet itaque enim voluptatem. Cum cumque sapiente quas provident error,
-      veritatis porro mollitia dolorem omnis maiores labore, iste quae atque qui
-      laudantium adipisci tempore, in harum! Reiciendis error quae velit
-      laboriosam? Illo deserunt quia beatae, totam necessitatibus molestiae
-      perspiciatis placeat reiciendis magnam neque sit a eius eum ea, error
-      consequuntur tenetur quibusdam debitis quos ex, porro nemo. Odio impedit,
-      deserunt nihil sequi explicabo amet veniam. Mollitia qui ea amet velit
-      doloribus enim placeat. Autem vel saepe explicabo voluptatem nobis est,
-      eveniet quasi possimus veniam illo similique vitae quod. Architecto
-      excepturi officia delectus voluptatem aperiam repellendus rem optio
-      possimus distinctio dolorum, reprehenderit iusto minus, deserunt error
-      consequatur deleniti. Reiciendis possimus perferendis, nostrum saepe nam
-      qui quis quod quos voluptatem earum ad nesciunt cumque sit maiores
-      corporis maxime amet et, praesentium, ipsam blanditiis? Voluptatum
-      repellendus eos earum deleniti alias cupiditate magni blanditiis, neque
-      fuga fugit, nulla incidunt voluptates laborum pariatur quasi explicabo
-      necessitatibus mollitia enim exercitationem. Numquam in et vero adipisci,
-      excepturi asperiores nemo quibusdam nostrum labore doloribus minima amet
-      beatae cupiditate est tempora. Corporis nobis quia quaerat facilis
-      voluptates, accusamus eligendi quibusdam. Excepturi eveniet pariatur sint
-      facere earum! Ipsa perspiciatis fuga placeat rem atque esse nihil minus
-      iure aut nulla ducimus est sint, excepturi corporis hic deleniti eveniet
-      accusamus vero ipsam molestiae. Exercitationem, cum. Quo magni possimus
-      nesciunt minus vero cupiditate ab dolore? Omnis animi rem harum, fuga
-      velit, assumenda fugit sed eveniet architecto praesentium deserunt et
-      doloribus numquam id laudantium deleniti excepturi, voluptas pariatur!
-      Saepe explicabo repellendus totam? Magni neque tempora consectetur?
-      Facilis inventore laudantium nemo amet est, corrupti exercitationem ipsa,
-      deserunt tempore cum odit, quo doloribus ratione. Atque praesentium quod
-      voluptas repudiandae cupiditate harum omnis sit nesciunt corporis aliquam
-      vero ex quibusdam, facilis repellendus! Esse sit minus alias ex, mollitia
-      porro nobis illo voluptas magni est provident repellat, facilis impedit
-      molestias ipsam atque pariatur repellendus cumque! Repudiandae neque ea
-      quasi consequatur ullam sapiente dicta impedit sed eos, qui voluptate
-      nihil beatae quidem, a molestiae dolorum praesentium accusantium
-      perspiciatis aliquam incidunt veritatis dolore ex temporibus deleniti.
-      Accusantium fugiat ab esse aperiam nam reprehenderit labore accusamus eum
-      perferendis itaque est sit, eius sequi natus quas error neque beatae porro
-      eaque earum, recusandae veniam quos. Ad illo veniam nisi quas ex, fuga
-      cumque! Optio ab repudiandae perferendis dicta repellendus temporibus at!
-      Itaque eligendi minima deleniti, cum hic veniam. Nemo cupiditate voluptate
-      consequuntur non explicabo ducimus modi dolores vero fugit. Quia earum
-      laudantium inventore neque aliquam unde, voluptate ipsa molestias eveniet
-      veniam praesentium quo quas maxime magni laborum, reiciendis atque eius
-      magnam obcaecati officia autem adipisci, dolores veritatis. Hic
-      voluptatibus, enim distinctio cum assumenda consectetur aliquam, omnis
-      sapiente cumque vitae, eius atque sit explicabo dolorem in inventore fugit
-      nobis expedita impedit asperiores labore ipsa at saepe? Quos temporibus
-      architecto libero ad tempora, voluptatibus cumque rerum tenetur
-      perspiciatis alias pariatur non in quaerat, minus beatae atque veritatis
-      vitae labore dignissimos adipisci! Odio eligendi dicta neque velit numquam
-      voluptatem voluptatum ducimus ipsam esse? Deserunt, possimus.
-    </p>
-    <div class="container">
-      <div class="cards">
-        <div class="card">
-          <div class="card__image-holder">
-            <img
-              class="card__image"
-              src="https://source.unsplash.com/300x225/?wave"
-              alt="wave"
-            />
-          </div>
-          <div class="card-title">
-            <a href="#" class="toggle-info btn">
-              <span class="left"></span>
-              <span class="right"></span>
-            </a>
-            <h2>
-              <?=$annonce->getTitre()?>
-              <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div class="card-flap flap1">
-            <div class="card-description"><?=$annonce->getDescription()?></div>
-            <div class="card-flap flap2">
-              <div class="card-actions">
-                <a href="#" class="btn">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="public/css/card.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<p class="test">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id perferendis
+			eveniet itaque enim voluptatem. Cum cumque sapiente quas provident error,
+			veritatis porro mollitia dolorem omnis maiores labore, iste quae atque qui
+			laudantium adipisci tempore, in harum! Reiciendis error quae velit
+			laboriosam? Illo deserunt quia beatae, totam necessitatibus molestiae
+			perspiciatis placeat reiciendis magnam neque sit a eius eum ea, error
+			consequuntur tenetur quibusdam debitis quos ex, porro nemo. Odio impedit,
+			deserunt nihil sequi explicabo amet veniam. Mollitia qui ea amet velit
+			doloribus enim placeat. Autem vel saepe explicabo voluptatem nobis est,
+			eveniet quasi possimus veniam illo similique vitae quod. Architecto
+			excepturi officia delectus voluptatem aperiam repellendus rem optio
+			possimus distinctio dolorum, reprehenderit iusto minus, deserunt error
+			consequatur deleniti. Reiciendis possimus perferendis, nostrum saepe nam
+			qui quis quod quos voluptatem earum ad nesciunt cumque sit maiores
+			corporis maxime amet et, praesentium, ipsam blanditiis? Voluptatum
+			repellendus eos earum deleniti alias cupiditate magni blanditiis, neque
+			fuga fugit, nulla incidunt voluptates laborum pariatur quasi explicabo
+			necessitatibus mollitia enim exercitationem. Numquam in et vero adipisci,
+			excepturi asperiores nemo quibusdam nostrum labore doloribus minima amet
+			beatae cupiditate est tempora. Corporis nobis quia quaerat facilis
+			voluptates, accusamus eligendi quibusdam. Excepturi eveniet pariatur sint
+			facere earum! Ipsa perspiciatis fuga placeat rem atque esse nihil minus
+			iure aut nulla ducimus est sint, excepturi corporis hic deleniti eveniet
+			accusamus vero ipsam molestiae. Exercitationem, cum. Quo magni possimus
+			nesciunt minus vero cupiditate ab dolore? Omnis animi rem harum, fuga
+			velit, assumenda fugit sed eveniet architecto praesentium deserunt et
+			doloribus numquam id laudantium deleniti excepturi, voluptas pariatur!
+			Saepe explicabo repellendus totam? Magni neque tempora consectetur?
+			Facilis inventore laudantium nemo amet est, corrupti exercitationem ipsa,
+			deserunt tempore cum odit, quo doloribus ratione. Atque praesentium quod
+			voluptas repudiandae cupiditate harum omnis sit nesciunt corporis aliquam
+			vero ex quibusdam, facilis repellendus! Esse sit minus alias ex, mollitia
+			porro nobis illo voluptas magni est provident repellat, facilis impedit
+			molestias ipsam atque pariatur repellendus cumque! Repudiandae neque ea
+			quasi consequatur ullam sapiente dicta impedit sed eos, qui voluptate
+			nihil beatae quidem, a molestiae dolorum praesentium accusantium
+			perspiciatis aliquam incidunt veritatis dolore ex temporibus deleniti.
+			Accusantium fugiat ab esse aperiam nam reprehenderit labore accusamus eum
+			perferendis itaque est sit, eius sequi natus quas error neque beatae porro
+			eaque earum, recusandae veniam quos. Ad illo veniam nisi quas ex, fuga
+			cumque! Optio ab repudiandae perferendis dicta repellendus temporibus at!
+			Itaque eligendi minima deleniti, cum hic veniam. Nemo cupiditate voluptate
+			consequuntur non explicabo ducimus modi dolores vero fugit. Quia earum
+			laudantium inventore neque aliquam unde, voluptate ipsa molestias eveniet
+			veniam praesentium quo quas maxime magni laborum, reiciendis atque eius
+			magnam obcaecati officia autem adipisci, dolores veritatis. Hic
+			voluptatibus, enim distinctio cum assumenda consectetur aliquam, omnis
+			sapiente cumque vitae, eius atque sit explicabo dolorem in inventore fugit
+			nobis expedita impedit asperiores labore ipsa at saepe? Quos temporibus
+			architecto libero ad tempora, voluptatibus cumque rerum tenetur
+			perspiciatis alias pariatur non in quaerat, minus beatae atque veritatis
+			vitae labore dignissimos adipisci! Odio eligendi dicta neque velit numquam
+			voluptatem voluptatum ducimus ipsam esse? Deserunt, possimus.
+		</p>
+		<p>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+			voluptates, odio officiis aspernatur rerum beatae asperiores harum aut?
+			Labore ab animi commodi culpa quae laborum. Accusamus magni dolores
+			consequatur? Eveniet, saepe eius! Asperiores aspernatur cumque accusantium
+			ducimus! Iste architecto saepe officiis nam maxime. Eveniet architecto
+			voluptatem asperiores rerum cumque illo consectetur quos earum dolor quas
+			voluptatibus iusto eos corporis alias temporibus eius omnis quasi
+			veritatis fuga, nihil nam blanditiis nobis doloribus. Sunt, veniam.
+			Voluptates perferendis veritatis error debitis ullam. Illo vero deleniti
+			facere laborum iusto ipsa illum hic sunt fugiat, dignissimos nesciunt
+			recusandae dicta libero at optio consectetur ipsam dolorum amet excepturi
+			voluptatum blanditiis maiores? Vero beatae explicabo quos. Non esse ab
+			consequatur est, impedit quis animi necessitatibus nulla saepe temporibus
+			ratione vero odio eum provident distinctio laborum ad. Harum praesentium
+			suscipit ad maxime impedit, aperiam error facere quibusdam officia hic
+			molestias ipsam sint maiores quasi aut animi perspiciatis temporibus nam
+			ipsa iusto est placeat commodi quam similique? Quasi pariatur animi
+			impedit eum perspiciatis ut molestiae ex iure illum vitae magnam debitis
+			soluta velit reprehenderit, harum totam praesentium explicabo quisquam, ab
+			illo, temporibus a? Vero sapiente minima reprehenderit illum soluta? Illum
+			repellendus voluptatibus, laboriosam itaque facere nam odio? Delectus
+			molestiae suscipit rerum praesentium quidem mollitia aliquid assumenda
+			dolorum? Distinctio, numquam voluptates voluptas odit temporibus modi
+			veritatis non veniam iure saepe nulla vero illum neque suscipit. Quia iste
+			optio, debitis, odit blanditiis vero ipsum harum voluptatem aliquam odio
+			doloribus culpa ducimus, quibusdam eligendi reprehenderit numquam eos ad?
+			Praesentium ratione similique distinctio maiores autem quos sapiente
+			laboriosam assumenda, vitae et labore incidunt neque consequatur officia
+			vero eligendi aspernatur quae officiis accusamus quisquam quam beatae
+			libero eos? In, totam illo aliquam officiis nesciunt eius minima
+			accusantium eum eveniet. Sapiente nemo pariatur iste laboriosam. Ullam,
+			commodi dolor quisquam fuga rerum inventore nemo ratione possimus eum, vel
+			beatae veniam, soluta sit corporis placeat non. Unde vel tenetur harum
+			mollitia non nam soluta quia quo eveniet commodi rerum animi perspiciatis
+			fuga repellat, amet consequuntur atque omnis aliquam dignissimos
+			praesentium dolorem veritatis? A obcaecati natus magni omnis quod corporis
+			quos rem autem? Fugiat assumenda consequatur error nam perspiciatis beatae
+			cupiditate, magni quas eaque quaerat autem vel, neque atque obcaecati
+			nostrum eius exercitationem ipsa necessitatibus corporis similique
+			excepturi vero quibusdam dolorum ut. Quo voluptatum deleniti amet alias
+			modi provident inventore quas repellendus explicabo, ea debitis doloremque
+			iste labore quasi odio ad dolore veritatis dolor reprehenderit, autem
+			cumque impedit voluptas? Nobis beatae quae quod odit ipsa natus minima at,
+			voluptates tempore quaerat nulla molestiae itaque sed et quidem suscipit,
+			repellat exercitationem sequi similique! Quisquam quidem ipsam deleniti
+			corporis nam sit enim exercitationem iure! Voluptate numquam expedita quod
+			labore. Quibusdam praesentium necessitatibus voluptas odio eos rerum
+			laborum pariatur adipisci molestias sed aliquam nihil deserunt minus,
+			architecto possimus ex iste illum debitis et ducimus. Explicabo, illo
+			saepe? Voluptatem nobis recusandae assumenda vero excepturi iure, placeat,
+			quasi, quidem cupiditate fugit nihil adipisci iusto pariatur optio
+			accusamus veniam praesentium quae modi est voluptate! Accusamus, neque a
+			mollitia quibusdam sint amet illum ut ad.
+		</p>
+		<div class="container">
+			<div class="cards">
+				<div class="card">
+					<div class="card__image-holder">
+						<img
+							class="card__image"
+							src="https://source.unsplash.com/300x225/?wave"
+							alt="wave"
+						/>
+					</div>
+					<div class="card-title">
+						<a href="#" class="toggle-info btn">
+							<span class="left"></span>
+							<span class="right"></span>
+						</a>
+						<h2>
+							<?=$annonce->getTitre()?>
+							<small>Image from unsplash.com</small>
+						</h2>
+					</div>
+					<div class="card-flap flap1">
+						<div class="card-description"><?=$annonce->getDescription()?></div>
+						<div class="card-flap flap2">
+							<div class="card-actions">
+								<a href="#" class="btn">Read more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
