@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="public/css/card.css">
         <link rel="stylesheet" href="public/css/header.css">
         <link rel="stylesheet" href="public/css/nav.css">
-        <link rel="stylesheet" href="public/css/404.css">
         <link rel="stylesheet" href="public/css/footer.css">
 
         <!-- titre qui change en fonction de la vue -->

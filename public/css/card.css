@@ -42,7 +42,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 .container {
-  padding-top: 100px;
+  padding-top: 50px;
   position: relative;
   display: flex;
   justify-content: space-around;

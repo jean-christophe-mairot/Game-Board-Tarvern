@@ -1,0 +1,13 @@
+body {
+  background: black;
+}
+.error404 {
+  border: red 1px solid;
+  background: black;
+  background: url(../public/img/404.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  color: aliceblue;
+}
