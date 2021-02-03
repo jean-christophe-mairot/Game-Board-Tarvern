@@ -27,13 +27,13 @@ VALIDATION
 Les étapes :
 
 - [x] Définir l'arborescence de vos dossiers
-- [ ] Définir les routes nécessaire à votre projet
+- [x] Définir les routes nécessaire à votre projet
 - [x] Mettre en place le .gitignore
 
 - [x] Réaliser les wireframe de toutes vos pages et emails
 - [x] Réaliser les vues nécessaires pour vos différentes pages
 - [ ] Réaliser le MJML de vos mails
-- [ ] Réaliser le code pour générer le PDF
+- [x] Réaliser le code pour générer le PDF
 
 - [x] Créer le MCD
 - [x] Créer le MLD
@@ -42,7 +42,7 @@ Les étapes :
 - [x] Installer Composer sous Windows
 - [x] Avec Composer généré l'Autoload (PSR-4)
 - [x] Mettre en place le Router et ajouter vos routes
-- [ ] Créer les contrôleurs et méthodes nécessaire à vos routes
+- [x] Créer les contrôleurs et méthodes nécessaire à vos routes
 
 - [x] Installer vos dépendances PHP : AltoRouter, Twig, MJML, MJML-PHP, mPDF
 - [x] Installer nodejs et npm
